@@ -84,6 +84,9 @@
       - ```-a``` option is same as ```--armor``` and is used to generate ASCII text
     - **Private** ```gpg -a --export-secret-keys <uid>```
 
+1. Run ```gpgconf --kill gpg-agent``` to kill any running agent that might be hung
+
+
 ### Resources
 
 1. https://wiki.debian.org/Subkeys

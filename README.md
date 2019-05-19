@@ -84,7 +84,13 @@
       - ```-a``` option is same as ```--armor``` and is used to generate ASCII text
     - **Private** ```gpg -a --export-secret-keys <uid>```
 
-1. Run ```gpgconf --kill gpg-agent``` to kill any running agent that might be hung
+1. Run `gpgconf --kill gpg-agent` to kill any running agent that might be hung
+
+1. Run `gpg-connect-agent reloadagent /bye` to reload agent
+
+1. Run `gpgconf --list-dir agent-socket agent-extra-socket` to list actual location of sockets
+
+1. Run `gpg-connect-agent 'keyinfo --list' /bye` to list keys in the gpg-agent
 
 
 ### Resources

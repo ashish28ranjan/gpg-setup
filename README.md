@@ -92,6 +92,10 @@
 
 1. Run `gpg-connect-agent 'keyinfo --list' /bye` to list keys in the gpg-agent
 
+1. Run `gpg-connect-agent --dirmngr 'keyserver --hosttable'` to list available keyservers
+
+1. Kill dirmngr `gpgconf --kill dirmngr`
+
 
 ### Resources
 
